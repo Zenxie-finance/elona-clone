@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Local editor and tooling state
+.dotnet_cli/
+.vs/
+.vscode/
+
+# .NET build outputs
+bin/
+obj/
