@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "godot-gopeak": {
+      "type": "stdio",
+      "command": "E:\\nodejs\\node.exe",
+      "args": [
+        "E:\\Tools\\GoPeak-src\\build\\index.js"
+      ],
+      "env": {
+        "GODOT_PATH": "E:\\Godot\\Godot_v4.6.1-stable_mono_win64\\Godot_v4.6.1-stable_mono_win64.exe",
+        "GOPEAK_TOOL_PROFILE": "compact"
+      }
+    }
+  }
+}

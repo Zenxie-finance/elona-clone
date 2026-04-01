@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/elona.sln",
+        "-m:1"
+      ],
+      "options": {
+        "env": {
+          "DOTNET_CLI_HOME": "${workspaceFolder}/.dotnet_cli",
+          "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1"
+        }
+      },
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "test",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/tests/Elona.Game.Tests/Elona.Game.Tests.csproj"
+      ],
+      "options": {
+        "env": {
+          "DOTNET_CLI_HOME": "${workspaceFolder}/.dotnet_cli",
+          "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}

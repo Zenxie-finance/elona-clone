@@ -5,7 +5,11 @@
 # Local editor and tooling state
 .dotnet_cli/
 .vs/
-.vscode/
+.vscode/*
+!.vscode/
+!.vscode/launch.json
+!.vscode/mcp.json
+!.vscode/tasks.json
 
 # .NET build outputs
 bin/
